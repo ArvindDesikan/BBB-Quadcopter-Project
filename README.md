@@ -9,3 +9,6 @@ Testing against the sensor data is causing the controller to reach duty cycle sa
 - This is being investigated with MRAS to filter the IMU based estimation of velocity and position which accumulate drift error over time.
 
 Call ./Work/makeall to build a ".cpp". The executable is stored at /Executables/
+
+Before executing any file, execute startup.sh
+- It will load the necessary pwm device-tree-overlays and create dynamic folders in /sys/class/pwm
